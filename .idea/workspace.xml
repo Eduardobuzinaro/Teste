@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76bbf07d-5ba8-47e7-95ad-2b10d1e9fd10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SchoolController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SchoolController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Entity/School.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entity/School.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Table/SchoolTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Table/SchoolTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/Pages/home.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/Pages/home.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/School/add.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/School/add.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/School/edit.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/School/edit.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/School/index.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/School/index.ctp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template/School/view.ctp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template/School/view.ctp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SchoolController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Entity/School.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Table/SchoolTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixture/SchoolFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixture/SchoolFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Controller/SchoolControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Controller/SchoolControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestCase/Model/Table/SchoolTableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase/Model/Table/SchoolTableTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_panels" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_debug_kit_requests" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_school" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/models/myapp_cake_model_default_school" afterDir="false" />
@@ -22,7 +18,6 @@
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_debug_kit_en__u_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/cache/persistent/myapp_cake_core_translations_default_en__u_s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/debug_kit.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/debug_kit.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webroot/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/webroot/css/base.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,61 +41,49 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="ctp" value="24" />
+          <entry key="ctp" value="33" />
           <entry key="empty" value="1" />
-          <entry key="php" value="12" />
+          <entry key="php" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="PHP" value="35" />
+          <entry key="PHP" value="51" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="4" />
-          <entry key="ctp" value="456" />
-          <entry key="php" value="18" />
+          <entry key="ctp" value="509" />
+          <entry key="php" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="PHP" value="474" />
+          <entry key="PHP" value="532" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Template/School/index.ctp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Template/School/view.ctp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding>
-                <element signature="e#6#125#0#PHP" expanded="true" />
-              </folding>
+              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/School/add.ctp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Template/Schools/view.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Template/School/edit.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="340">
+              <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -135,6 +118,12 @@
         <option value="$PROJECT_DIR$/src/Template/School/add.ctp" />
         <option value="$PROJECT_DIR$/src/Template/School/view.ctp" />
         <option value="$PROJECT_DIR$/src/Template/School/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Controller/TeachersController.php" />
+        <option value="$PROJECT_DIR$/src/Model/Table/TeachersTable.php" />
+        <option value="$PROJECT_DIR$/src/Template/Schools/add.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Schools/edit.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Schools/index.ctp" />
+        <option value="$PROJECT_DIR$/src/Template/Schools/view.ctp" />
       </list>
     </option>
   </component>
@@ -263,62 +252,7 @@
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
               <item name="Teste" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="Table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="Email" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="Email" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="Email" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Template" type="462c0819:PsiDirectoryNode" />
-              <item name="Layout" type="462c0819:PsiDirectoryNode" />
-              <item name="rss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
@@ -333,6 +267,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Template" type="462c0819:PsiDirectoryNode" />
               <item name="School" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Teste" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Schools" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
@@ -383,7 +324,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12301000" />
+    <option name="totallyTimeSpent" value="16063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -488,13 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Table/SchoolTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SchoolController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="721">
@@ -512,34 +446,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/School/edit.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/SchoolTable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="-8">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Template/School/view.ctp">
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/Teacher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="-144" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/TeachersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Table/TeachersTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/School/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="170">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Schools/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/School/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="32" selection-start-line="20" selection-start-column="3" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Schools/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/School/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="238">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="47" />
           <folding>
             <element signature="e#6#125#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/School/view.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Schools/index.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Template/Schools/view.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
         </state>
       </provider>
     </entry>
