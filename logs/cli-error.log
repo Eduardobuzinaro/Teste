@@ -1,0 +1,19 @@
+2019-02-26 18:24:57 Error: [Cake\Database\Exception] Cannot describe teacher. It has 0 columns. in C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 99
+Stack Trace:
+#0 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('teacher', Array)
+#1 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('teacher')
+#2 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\ORM\Table.php(680): Cake\ORM\Table->getSchema()
+#3 C:\Users\Buzinaro\Teste\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#4 C:\Users\Buzinaro\Teste\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#5 C:\Users\Buzinaro\Teste\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'teacher', 'Teacher')
+#6 C:\Users\Buzinaro\Teste\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Teacher')
+#7 C:\Users\Buzinaro\Teste\vendor\cakephp\bake\src\Shell\BakeShell.php(279): Bake\Shell\Task\ModelTask->main('Teacher')
+#8 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Teacher', 0)
+#9 C:\Users\Buzinaro\Teste\vendor\cakephp\bake\src\Shell\BakeShell.php(280): Cake\Collection\Collection->each(Object(Closure))
+#10 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('teacher')
+#11 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Console\CommandRunner.php(371): Cake\Console\Shell->runCommand(Array, true)
+#12 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Console\CommandRunner.php(166): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#13 C:\Users\Buzinaro\Teste\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#14 {main}
+
+

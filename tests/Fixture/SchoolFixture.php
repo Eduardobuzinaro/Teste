@@ -24,15 +24,12 @@ class SchoolFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'school_id' => ['type' => 'integer', 'length' => 10, 'autoIncrement' => true, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null],
-        'name' => ['type' => 'string', 'length' => 50, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
-        'phone' => ['type' => 'string', 'length' => 50, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
-        'email' => ['type' => 'string', 'length' => 355, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
-        'created_on' => ['type' => 'timestamp', 'length' => null, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 10, 'autoIncrement' => true, 'default' => null, 'null' => false, 'comment' => null, 'precision' => null, 'unsigned' => null],
+        'name' => ['type' => 'string', 'length' => 256, 'default' => null, 'null' => false, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
+        'email' => ['type' => 'string', 'length' => 256, 'default' => null, 'null' => true, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
+        'phone' => ['type' => 'string', 'length' => 30, 'default' => null, 'null' => true, 'collate' => null, 'comment' => null, 'precision' => null, 'fixed' => null],
         '_constraints' => [
-            'primary' => ['type' => 'primary', 'columns' => ['school_id'], 'length' => []],
-            'school_name_key' => ['type' => 'unique', 'columns' => ['name'], 'length' => []],
-            'school_email_key' => ['type' => 'unique', 'columns' => ['email'], 'length' => []],
+            'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -46,11 +43,10 @@ class SchoolFixture extends TestFixture
     {
         $this->records = [
             [
-                'school_id' => 1,
+                'id' => 1,
                 'name' => 'Lorem ipsum dolor sit amet',
-                'phone' => 'Lorem ipsum dolor sit amet',
                 'email' => 'Lorem ipsum dolor sit amet',
-                'created_on' => 1551146583
+                'phone' => 'Lorem ipsum dolor sit amet'
             ],
         ];
         parent::init();

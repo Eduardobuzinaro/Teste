@@ -6,11 +6,12 @@ use Cake\ORM\Entity;
 /**
  * School Entity
  *
- * @property int $school_id
+ * @property int $id
  * @property string $name
- * @property string $phone
- * @property string $email
- * @property \Cake\I18n\FrozenTime $created_on
+ * @property string|null $email
+ * @property string|null $phone
+ *
+ * @property \App\Model\Entity\Teacher[] $teachers
  */
 class School extends Entity
 {
@@ -26,7 +27,8 @@ class School extends Entity
      */
     protected $_accessible = [
         'name' => true,
+        'email' => true,
         'phone' => true,
-        'email' => true
+        'teachers' => true
     ];
 }
