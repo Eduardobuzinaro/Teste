@@ -6,7 +6,7 @@
 ?>
 <nav class="large-2 medium-9 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit School'), ['action' => 'edit', $school->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete School'), ['action' => 'delete', $school->id], ['confirm' => __('Are you sure you want to delete # {0}?', $school->id)]) ?> </li>
         <li><?= $this->Html->link(__('List Schools'), ['action' => 'index']) ?> </li>
@@ -18,7 +18,7 @@
 <div class="schools view large-10 medium-8 columns content">
     <h3><?= h($school->name) ?></h3>
     <div class="panel panel-primary ">
-        <table class="vertical-table" table-striped">
+        <table class="vertical-table table-striped">
             <tr>
                 <th scope="row"><?= __('Name') ?></th>
                 <td><?= h($school->name) ?></td>
