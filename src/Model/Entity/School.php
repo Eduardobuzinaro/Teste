@@ -27,7 +27,6 @@ class School extends Entity
     protected $_accessible = [
         'name' => true,
         'phone' => true,
-        'email' => true,
-        'created_on' => true
+        'email' => true
     ];
 }

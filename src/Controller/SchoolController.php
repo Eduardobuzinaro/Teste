@@ -52,11 +52,11 @@ class SchoolController extends AppController
         if ($this->request->is('post')) {
             $school = $this->School->patchEntity($school, $this->request->getData());
             if ($this->School->save($school)) {
-                $this->Flash->success(__('The school has been saved.'));
+                $this->Flash->success(__('The school has been added.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The school could not be saved. Please, try again.'));
+            $this->Flash->error(__('The school could not be added. Please, try again.'));
         }
         $this->set(compact('school'));
     }
@@ -76,11 +76,11 @@ class SchoolController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $school = $this->School->patchEntity($school, $this->request->getData());
             if ($this->School->save($school)) {
-                $this->Flash->success(__('The school has been saved.'));
+                $this->Flash->success(__('The school has been edited.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The school could not be saved. Please, try again.'));
+            $this->Flash->error(__('The school could not be edited. Please, try again.'));
         }
         $this->set(compact('school'));
     }

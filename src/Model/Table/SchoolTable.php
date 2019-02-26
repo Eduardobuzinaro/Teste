@@ -67,10 +67,6 @@ class SchoolTable extends Table
             ->allowEmptyString('email', false)
             ->add('email', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
-        $validator
-            ->dateTime('created_on')
-            ->requirePresence('created_on', 'create')
-            ->allowEmptyDateTime('created_on', false);
 
         return $validator;
     }

@@ -28,3 +28,75 @@ Exception Attributes: array (
 Request URL: /school
 
 
+2019-02-26 16:40:39 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column school.created_on does not exist
+LINE 1: ..."School__phone", School.email AS "School__email", School.cre...
+                                                             ^
+#0 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\ORM\Query.php(1141): Cake\Database\Query->execute()
+#8 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\ORM\Query.php(1088): Cake\ORM\Query->_all()
+#10 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#12 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\ORM\Table.php(1620): Cake\ORM\Query->firstOrFail()
+#13 C:\Users\Buzinaro\Teste\src\Controller\SchoolController.php(74): Cake\ORM\Table->get(Array, Array)
+#14 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\SchoolController->edit('2')
+#15 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#16 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SchoolController))
+#17 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\Users\Buzinaro\Teste\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Users\Buzinaro\Teste\webroot\index.php(40): Cake\Http\Server->run()
+#34 {main}
+Request URL: /school/edit/2
+Referer URL: http://localhost:8765/school/view/2
+
+
+2019-02-26 16:45:17 Error: [Error] Call to undefined method App\View\AppView::redirect()
+#0 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\View\View.php(1413): include()
+#1 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\View\View.php(1374): Cake\View\View->_evaluate('C:\\Users\\Buzina...', Array)
+#2 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\View\View.php(927): Cake\View\View->_render('C:\\Users\\Buzina...')
+#3 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\View\View.php(885): Cake\View\View->renderLayout('', 'default')
+#4 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Controller\Controller.php(791): Cake\View\View->render(NULL, NULL)
+#5 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#6 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SchoolController))
+#7 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(108): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Users\Buzinaro\Teste\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Users\Buzinaro\Teste\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Users\Buzinaro\Teste\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+Request URL: /school
+Referer URL: http://localhost:8765/school/edit/3
+
+
