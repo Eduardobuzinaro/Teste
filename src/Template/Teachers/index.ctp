@@ -6,10 +6,25 @@
 ?>
 <nav class="large-2 medium-9 columns" id="actions-sidebar">
     <ul class="side-nav">
+
         <li><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Teacher'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Schools'), ['controller' => 'Schools', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New School'), ['controller' => 'Schools', 'action' => 'add']) ?></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="schoolDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Teacher
+            </a>
+            <div class="dropdown-menu" aria-labelledby="schoolDropdown">
+                <a class="dropdown-item" ><?= $this->Html->link(__('New Teacher'), ['action' => 'add']) ?></a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="teacherDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                School
+            </a>
+            <div class="dropdown-menu" aria-labelledby="teacherDropdown">
+                <a class="dropdown-item" ><?= $this->Html->link(__('List Schools'), ['controller' => 'Schools', 'action' => 'index']) ?></a>
+                <a class="dropdown-item" ><?= $this->Html->link(__('New School'), ['controller' => 'Schools', 'action' => 'add']) ?></a>
+            </div>
+        </li>
     </ul>
 </nav>
 <div class="teachers index large-10 medium-8 columns content">
@@ -36,14 +51,24 @@
                         <td><?= h($teacher->phone) ?></td>
                         <td><?= $teacher->has('school') ? $this->Html->link($teacher->school->name, ['controller' => 'Schools', 'action' => 'view', $teacher->school->id]) : '' ?></td>
                         <td class="actions">
-                            <?= $this->Html->link(__('View'), ['action' => 'view', $teacher->id]) ?>
-                            <?= $this->Html->link(__('Edit'), ['action' => 'edit', $teacher->id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $teacher->id], ['confirm' => __('Are you sure you want to delete # {0}?', $teacher->id)]) ?>
+                            <?= $this->Html->link(__('View'),
+                                ['action' => 'view', $teacher->id],
+                                ['class'=>'btn btn-info']) ?>
+                            <?= $this->Html->link(__('Edit'),
+                                ['action' => 'edit', $teacher->id],
+                                ['class'=>'btn btn-warning ']) ?>
+                            <?= $this->Form->postLink(__('Delete'),
+                                ['action' => 'delete', $teacher->id],
+                                ['class'=>'btn btn-danger'],
+                                ['confirm' => __('Are you sure you want to delete # {0}?', $teacher->id)]) ?>
                         </td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
+            <?= $this->Html->link(__('New Teacher'),
+                ['controller' => 'Teachers', 'action' => 'add'],
+                ['class'=>'btn btn-success  btn-lg']) ?>
             <div class="paginator">
                 <ul class="pagination">
                     <?= $this->Paginator->first('<< ' . __('first')) ?>
@@ -52,7 +77,6 @@
                     <?= $this->Paginator->next(__('next') . ' >') ?>
                     <?= $this->Paginator->last(__('last') . ' >>') ?>
                 </ul>
-                <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
             </div>
         </div>
     </div>
