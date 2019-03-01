@@ -1,0 +1,17 @@
+1 - Programas usados:
+
+    Composer;
+    Git;
+    GitKraken;
+    PgAdmin;
+    PhpStorm;
+    Postgresql.
+
+ 2 - Execução do projeto
+
+    1 - Clone o projeto do seguinte endereço : https://github.com/Eduardobuzinaro/Teste.git.
+    2 - Instale o postgresql.
+    3 - Crie um database com  o nome teste_dev.
+    4 - Navegue até a pasta bin dentro do projeto clonado.
+    5 - Execute os arquivos server.bat e migration.bat para ligar o servidor do cake e fazer a migration das tabelas respectivamente.
+    8 - Abre o navegador no endereço: localhost:8765.
