@@ -1,2 +1,2 @@
 @echo off
-..\bin\\cake migrations migrate
+..\bin\cake migrations migrate

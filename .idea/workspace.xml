@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76bbf07d-5ba8-47e7-95ad-2b10d1e9fd10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/script/migration.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/server.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/migration.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/server.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentacao/documentacao" beforeDir="false" afterPath="$PROJECT_DIR$/documentacao/documentacao" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/migration.bat" beforeDir="false" afterPath="$PROJECT_DIR$/script/migration.bat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,17 +21,18 @@
     <session id="-1551045974">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="bat" value="6" />
+          <entry key="bat" value="7" />
           <entry key="css" value="10" />
           <entry key="ctp" value="74" />
           <entry key="documentacao" value="1" />
@@ -49,7 +46,7 @@
           <entry key="CSS" value="10" />
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="113" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -72,7 +69,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/documentacao/documentacao">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -81,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script/server.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -94,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/script/migration.bat">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -165,8 +162,8 @@
         <option value="$PROJECT_DIR$/bin/server.bat" />
         <option value="$PROJECT_DIR$/bin/migration.bat" />
         <option value="$PROJECT_DIR$/script/server.bat" />
-        <option value="$PROJECT_DIR$/script/migration.bat" />
         <option value="$PROJECT_DIR$/documentacao/documentacao" />
+        <option value="$PROJECT_DIR$/script/migration.bat" />
       </list>
     </option>
   </component>
@@ -267,7 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,6 +295,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,18 +336,20 @@
       <workItem from="1551138433535" duration="2049000" />
       <workItem from="1551188216114" duration="10132000" />
       <workItem from="1551283855214" duration="13727000" />
-      <workItem from="1551372861550" duration="6361000" />
+      <workItem from="1551372861550" duration="6469000" />
+      <workItem from="1551403565824" duration="84000" />
+      <workItem from="1551403677092" duration="67000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39814000" />
+    <option name="totallyTimeSpent" value="40073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -558,20 +557,8 @@
         <state relative-caret-position="-212" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Migrations/20190227201817_CreatePostsTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Migrations/Migrantionstest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Migrations/20190227201817_CreatePostsTable.php" />
+    <entry file="file://$PROJECT_DIR$/config/Migrations/Migrantionstest.php" />
     <entry file="file://$PROJECT_DIR$/config/app.default.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -604,24 +591,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/server.bat">
+    <entry file="file://$PROJECT_DIR$/documentacao/documentacao">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        <state relative-caret-position="255">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/migration.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documentacao/documentacao">
+    <entry file="file://$PROJECT_DIR$/script/server.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
