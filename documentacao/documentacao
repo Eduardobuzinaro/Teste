@@ -11,6 +11,10 @@
 
     1 - Clone o projeto do seguinte endereço : https://github.com/Eduardobuzinaro/Teste.git.
     2 - Instale o postgresql.
+    2.1 - Habilite no php.ini as seguintes extensões:
+            extension=php_pdo_pgsql.dll
+            extension=php_pgsql.dll
+    2.2 - Atualize a senha do database do arquivo app.php colocando a referente ao postgres instalado na maquina local
     3 - Navegue até a pasta script dentro do projeto clonado.
     4 - Execute o arquivo server.bat para ligar o servidor do cake.
     5 - Crie um database com o nome teste_dev.
