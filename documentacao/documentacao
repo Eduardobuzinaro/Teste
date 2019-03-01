@@ -11,7 +11,8 @@
 
     1 - Clone o projeto do seguinte endereço : https://github.com/Eduardobuzinaro/Teste.git.
     2 - Instale o postgresql.
-    3 - Crie um database com  o nome teste_dev.
-    4 - Navegue até a pasta bin dentro do projeto clonado.
-    5 - Execute os arquivos server.bat e migration.bat para ligar o servidor do cake e fazer a migration das tabelas respectivamente.
-    8 - Abre o navegador no endereço: localhost:8765.
+    3 - Navegue até a pasta script dentro do projeto clonado.
+    4 - Execute o arquivo server.bat para ligar o servidor do cake.
+    5 - Crie um database com o nome teste_dev.
+    6 - Execute o arquivo migration.bat para fazer a migration das tabelas referentes ao database.
+    7 - Abre o navegador no endereço: localhost:8765.
